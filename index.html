@@ -1,0 +1,3190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Ezekiel A. | Senior Telegram Bot Developer | Python Automation Expert</title>
+    <meta name="description" content="Professional Telegram Bot Developer specializing in AI chatbots, Python automation, and scalable bot architecture. 50+ bots developed with 99.9% uptime.">
+    <meta name="keywords" content="Telegram bot developer, Python automation, AI chatbots, bot architecture, Python developer">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Solaze01.github.io/">
+    <meta property="og:title" content="Ezekiel A. | Senior Telegram Bot Developer">
+    <meta property="og:description" content="Professional Telegram Bot Developer specializing in AI chatbots and Python automation">
+    <meta property="og:image" content="https://Solaze01.github.io/images/social-preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://Solaze01.github.io/">
+    <meta property="twitter:title" content="Ezekiel A. | Senior Telegram Bot Developer">
+    <meta property="twitter:description" content="Professional Telegram Bot Developer specializing in AI chatbots and Python automation">
+    <meta property="twitter:image" content="https://Solaze01.github.io/images/social-preview.jpg">
+
+    <!-- Favicon (Keep your existing) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><style>circle{fill:%234361ee}@media (prefers-color-scheme:dark){circle{fill:%234895ef}}</style><circle cx=%2250%22 cy=%2250%22 r=%2245%22/><path d=%22M30,35 Q50,25 70,35 L65,50 Q50,45 35,50 Z%22 fill=%22%23fff%22/><circle cx=%2240%22 cy=%2235%22 r=%225%22 fill=%22%23fff%22/><circle cx=%2260%22 cy=%2235%22 r=%225%22 fill=%22%23fff%22/><path d=%22M30,65 Q50,75 70,65%22 stroke=%22%23fff%22 stroke-width=%223%22 fill=%22none%22/></svg>">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%234361ee/><path d=%22M30,35 Q50,25 70,35 L65,50 Q50,45 35,50 Z%22 fill=%23fff/><circle cx=%2240%22 cy=%2235%22 r=%225%22 fill=%23fff/><circle cx=%2260%22 cy=%2235%22 r=%225%22 fill=%23fff/><path d=%22M30,65 Q50,75 70,65%22 stroke=%23fff stroke-width=%223%22 fill=%22none%22/></svg>">
+    
+    <!-- Theme Colors (Keep your existing) -->
+    <meta name="theme-color" content="#4361ee" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#4895ef" media="(prefers-color-scheme: dark)">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1HE17KVWN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J1HE17KVWN');
+    </script>
+    
+    <!-- Preload Resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS & Fonts (Keep your existing) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://Solaze01.github.io/">
+</head>
+    <style>
+.team-container {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.team-member {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-photo {
+    width: 180px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    padding: 5px;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 1rem;
+}
+
+.team-info h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.team-info p {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+@media (max-width: 576px) {
+  /* Adjust team container for mobile */
+  .team-container {
+    flex-direction: column;
+    align-items: flex-start; /* Align the content to the left */
+    gap: 1rem;
+  }
+
+  /* Reduce size of team member */
+  .team-member {
+    width: 100%;
+    max-width: 280px;
+    padding: 1rem;
+    text-align: left; /* Align text to the left */
+  }
+
+  /* Adjust team photo size */
+  .team-photo {
+    width: 100%;
+    max-width: 180px; /* Adjust size to make image more prominent */
+    margin-bottom: 0.5rem;
+  }
+
+  /* Adjust team info text */
+  .team-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .team-info p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+
+  /* Hero Section Adjustments */
+  .hero {
+    padding-top: 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack content */
+    align-items: flex-start; /* Align content to the left */
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 2rem;
+    text-align: left; /* Align text to the left */
+  }
+
+  /* Hero title size adjustment */
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .hero-description {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+  }
+
+  .hero-actions {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column; /* Stack actions vertically */
+    gap: 1rem;
+  }
+
+  /* Button adjustments for mobile */
+  .btn {
+    width: 100%; /* Make buttons full width */
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-align: center; /* Center the text */
+  }
+
+  .btn-primary {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 4px 14px rgba(67, 97, 238, 0.3);
+  }
+
+  .btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+  }
+
+  /* Adjust the team photo size */
+  .team-photo {
+    width: 100%;
+    max-width: 120px; /* Slightly smaller image */
+  }
+}
+
+/* ===== CSS Variables ===== */
+:root {
+    /* Light Theme */
+    --primary: #4361ee;
+    --primary-dark: #3a56d4;
+    --accent: #4895ef;
+    --text: #2b2d42;
+    --text-light: #8d99ae;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --nav-bg: rgba(255, 255, 255, 0.98);
+    --border: rgba(0, 0, 0, 0.08);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --section-spacing: 8rem;
+}
+
+.dark-mode {
+    /* Dark Theme */
+    --primary: #4895ef;
+    --primary-dark: #3f7fd5;
+    --accent: #7209b7;
+    --text: #f8f9fa;
+    --text-light: #adb5bd;
+    --bg: #121212;
+    --card-bg: #1e1e1e;
+    --nav-bg: rgba(30, 30, 30, 0.98);
+    --border: rgba(255, 255, 255, 0.08);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+    transition: var(--transition);
+    overflow-x: hidden;
+}
+
+::selection {
+    background: var(--primary);
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: var(--section-spacing) 0;
+    position: relative;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== Utility Classes ===== */
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 4px 14px rgba(67, 97, 238, 0.3);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background: rgba(67, 97, 238, 0.1);
+}
+
+/* ===== Navigation ===== */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: var(--nav-bg);
+    box-shadow: var(--shadow-sm);
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(67, 97, 238, 0.1);
+}
+
+.theme-toggle:hover {
+    transform: rotate(30deg);
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1001;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(67, 97, 238, 0.08) 0%, rgba(67, 97, 238, 0) 70%);
+    z-index: -1;
+}
+
+/* New floating bot icons */
+.floating-bots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bot-icon {
+    position: absolute;
+    color: rgba(67, 97, 238, 0.1);
+    font-size: 2rem;
+    animation: float 15s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.hero-content {
+    max-width: 700px;
+    position: relative;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-title span {
+    color: var(--primary);
+    position: relative;
+    display: inline-block;
+}
+
+.hero-title span::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(67, 97, 238, 0.3);
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.hero-description {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 2.5rem;
+    color: var(--text-light);
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(67, 97, 238, 0.1);
+    color: var(--text);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+        /* ===== Stats Section ===== */
+        .stats-section {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+            transition: all 1s ease-out;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* ===== Section Titles ===== */
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* ===== Projects Section ===== */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-img-container {
+            position: relative;
+            overflow: hidden;
+            height: 220px;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-img {
+            transform: scale(1.05);
+        }
+
+        .project-content {
+            padding: 1.8rem;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .project-description {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .project-tag {
+            background: rgba(67, 97, 238, 0.1);
+            color: var(--primary);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .project-links {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        .project-link:hover {
+            color: var(--primary-dark);
+        }
+
+        /* Project Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: var(--card-bg);
+            border-radius: 12px;
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .modal-header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+
+        .modal-close:hover {
+            color: var(--primary);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .modal-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .modal-description {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+
+        .modal-features {
+            margin-bottom: 2rem;
+        }
+
+        .modal-features h4 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .modal-features ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .modal-features li {
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-footer {
+            padding: 1.5rem 2rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+        }
+
+        /* ===== Skills Section ===== */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+/* Force 3 in a row on laptops and up */
+@media (min-width: 1024px) {
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+        .skill-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .skill-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-description {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        /* Skill Bars */
+        .skill-bars {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skill-bar {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-name {
+            font-weight: 600;
+        }
+
+        .skill-percent {
+            color: var(--text-light);
+        }
+
+        .skill-progress {
+            height: 10px;
+            background: rgba(67, 97, 238, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skill-progress-bar {
+            height: 100%;
+            background: var(--primary);
+            border-radius: 5px;
+            width: 0;
+            transition: width 1.5s ease;
+        }
+
+        /* ===== Process Section ===== */
+        .process-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-left: 100px;
+        }
+
+        .process-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .process-number {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .process-content {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            flex-grow: 1;
+        }
+
+        .process-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .process-description {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* ===== Experience Timeline ===== */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 4rem;
+            width: 100%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            padding-right: calc(50% + 2rem);
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            padding-left: calc(50% + 2rem);
+            text-align: left;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 6px solid var(--card-bg);
+            box-shadow: 0 0 0 4px var(--primary);
+            z-index: 1;
+        }
+
+        .timeline-content {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            right: -15px;
+            border-width: 15px 0 15px 15px;
+            border-color: transparent transparent transparent var(--card-bg);
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            left: -15px;
+            border-width: 15px 15px 15px 0;
+            border-color: transparent var(--card-bg) transparent transparent;
+        }
+
+        .timeline-date {
+            font-size: 0.95rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            display: inline-block;
+            background: rgba(67, 97, 238, 0.1);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+        }
+
+        .timeline-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-company {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .timeline-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ===== Testimonials ===== */
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 4rem;
+            color: rgba(67, 97, 238, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .testimonial-content {
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            color: var(--text-light);
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-rating {
+            color: #ffc107;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        /* ===== Blog Section ===== */
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid var(--border);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .blog-img-container {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .blog-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .blog-card:hover .blog-img {
+            transform: scale(1.05);
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .blog-date {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .blog-excerpt {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .blog-link {
+            color: var(--primary);
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .blog-link:hover {
+            gap: 0.5rem;
+        }
+
+        /* ===== Contact Section ===== */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 4rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+        }
+
+        .contact-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(67, 97, 238, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-details p, 
+        .contact-details a {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .contact-details a:hover {
+            color: var(--primary);
+        }
+
+        .contact-form {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.875rem 1.25rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg);
+            color: var(--text);
+            transition: var(--transition);
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: var(--card-bg);
+            padding: 5rem 0 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+
+        .footer-social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .footer-social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(67, 97, 238, 0.1);
+            color: var(--text);
+            transition: var(--transition);
+        }
+
+        .footer-social-links a:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .copyright {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ===== Back to Top Button ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+
+        /* ===== Responsive Design ===== */
+        @media (max-width: 992px) {
+            :root {
+                --section-spacing: 6rem;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                padding-left: 80px;
+                padding-right: 0;
+                text-align: left;
+            }
+
+            .timeline-dot {
+                left: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --section-spacing: 5rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: var(--card-bg);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 6rem 2rem 2rem;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                z-index: 999;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-actions {
+                margin-left: auto;
+                margin-right: 1rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-step {
+                padding-left: 80px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            :root {
+                --section-spacing: 4rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .process-step {
+                padding-left: 70px;
+            }
+
+            .process-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+/* ===== Preloader Rolling Bots ===== */
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.bot-rolling-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.bot-roll {
+    font-size: 3rem;
+    color: var(--primary);
+    opacity: 0;
+    transform: translateY(0) rotate(0deg);
+}
+
+.bot-roll.left {
+    animation: roll-in-left 2s ease-out forwards;
+}
+
+.bot-roll.center {
+    animation: roll-in-center 2s ease-out forwards 0.4s;
+}
+
+.bot-roll.right {
+    animation: roll-in-right 2s ease-out forwards 0.8s;
+}
+
+.loading-text {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Roll-in animations */
+@keyframes roll-in-left {
+    0% {
+        transform: translateX(-200px) rotate(-360deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-in-center {
+    0% {
+        transform: scale(0.2) rotate(-180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-in-right {
+    0% {
+        transform: translateX(200px) rotate(360deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+
+        /* ===== Animations ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+
+        /* ===== Floating Elements ===== */
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* ===== Highlight Effect ===== */
+        .highlight {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: rgba(67, 97, 238, 0.3);
+            z-index: -1;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .highlight:hover::after {
+            height: 12px;
+            background: rgba(67, 97, 238, 0.5);
+        }
+
+        /* ===== Tooltip ===== */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 0.5rem;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: var(--transition);
+            font-size: 0.8rem;
+        }
+
+        .tooltip .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: var(--primary) transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+  <div class="bot-rolling-container">
+    <i class="fas fa-robot bot-roll left"></i>
+    <i class="fas fa-robot bot-roll center"></i>
+    <i class="fas fa-robot bot-roll right"></i>
+    <p class="loading-text">Loading...</p>
+  </div>
+</div>
+
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-robot logo-icon"></i>
+                <span>Ezekiel A.</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Floating bot icons in background -->
+        <div class="floating-bots" id="floatingBots"></div>
+        
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Senior <span class="highlight">Telegram Bot</span> Developer</h1>
+                <h2 class="hero-subtitle">Building Scalable Automation Solutions</h2>
+                <p class="hero-description">
+                    I specialize in developing high-performance Telegram bots with Python, 
+                    creating seamless user experiences and automating complex workflows 
+                    for businesses worldwide.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Solaze01" target="_blank" aria-label="GitHub" class="tooltip">
+                        <i class="fab fa-github"></i>
+                        <span class="tooltip-text">GitHub Profile</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn" class="tooltip">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="tooltip-text">LinkedIn Profile</span>
+                    </a>
+                    <a href="https://t.me/solaze_tech" target="_blank" aria-label="Telegram" class="tooltip">
+                        <i class="fab fa-telegram"></i>
+                        <span class="tooltip-text">Telegram Channel</span>
+                    </a>
+                    <a href="https://twitter.com/solazetech" target="_blank" aria-label="Twitter" class="tooltip">
+                        <i class="fab fa-twitter"></i>
+                        <span class="tooltip-text">Twitter Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+<!-- Replace the current team-photos div with this -->
+<div class="team-container fade-in delay-2">
+    <div class="team-member">
+        <img src="https://i.ibb.co/R4yMchfM/new-taker.jpg" class="team-photo">
+        <div class="team-info">
+            <h4>Ezekiel A.</h4>
+            <p>Senior Bot Developer</p>
+        </div>
+    </div>
+    <div class="team-member">
+        <img src="https://i.ibb.co/B2546X90/photo-6046340537541313724-x.jpg" alt="Dim Gold" class="team-photo">
+        <div class="team-info">
+            <h4>Ines Hbi</h4>
+            <p>Patner</p>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-card fade-in delay-1">
+                    <div class="stat-number" id="stat1">0</div>
+                    <div class="stat-label">Bots Developed</div>
+                </div>
+                <div class="stat-card fade-in delay-2">
+                    <div class="stat-number" id="stat2">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card fade-in delay-3">
+                    <div class="stat-number" id="stat3">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card fade-in delay-4">
+                    <div class="stat-number" id="stat4">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    Here are some of my most sophisticated Telegram bot implementations, 
+                    each designed to solve specific business challenges with elegant technical solutions.
+                </p>
+            </div>
+            
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-in delay-1" onclick="openModal('modal1')">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Enterprise Automation Bot" 
+                             class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Enterprise Automation Suite</h3>
+                        <p class="project-description">
+                            A comprehensive business automation platform within Telegram featuring CRM integration, 
+                            task management, and real-time analytics dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">aiogram</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">Redis</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/enterprise-bot" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="https://t.me/EnterpriseDemoBot" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card fade-in delay-2" onclick="openModal('modal2')">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="AI-Powered Assistant" 
+                             class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI-Powered Assistant</h3>
+                        <p class="project-description">
+                            Advanced conversational agent integrating GPT-4, custom knowledge bases, and 
+                            multi-modal capabilities (text, voice, image processing).
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">OpenAI API</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">WebSockets</span>
+                            <span class="project-tag">AWS Lambda</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/ai-assistant" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="https://t.me/AIAssistantDemo" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card fade-in delay-3" onclick="openModal('modal3')">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="E-Commerce Platform" 
+                             class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Complete shopping solution with product catalogs, cart management, payment processing 
+                            (Stripe/Telegram Payments), and order fulfillment.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">Stripe API</span>
+                            <span class="project-tag">Celery</span>
+                            <span class="project-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/ecommerce-bot" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="https://t.me/ShopDemoBot" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">
+                    My toolkit includes cutting-edge technologies and methodologies to deliver 
+                    robust, scalable Telegram bot solutions.
+                </p>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Skill 1 -->
+                <div class="skill-card fade-in delay-1">
+                    <i class="fab fa-python skill-icon floating"></i>
+                    <h3 class="skill-title">Python Development</h3>
+                    <p class="skill-description">
+                        Advanced asynchronous programming, design patterns, and performance optimization 
+                        for high-load applications.
+                    </p>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="skill-card fade-in delay-1">
+                    <i class="fas fa-robot skill-icon floating" style="animation-delay: 0.3s;"></i>
+                    <h3 class="skill-title">Bot Frameworks</h3>
+                    <p class="skill-description">
+                        Expertise in aiogram, python-telegram-bot, and Pyrogram with custom middleware 
+                        and FSM implementations.
+                    </p>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="skill-card fade-in delay-2">
+                    <i class="fas fa-database skill-icon floating" style="animation-delay: 0.4s;"></i>
+                    <h3 class="skill-title">Database Systems</h3>
+                    <p class="skill-description">
+                        PostgreSQL, MongoDB, Redis with advanced query optimization and caching strategies.
+                    </p>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="skill-card fade-in delay-2">
+                    <i class="fas fa-cloud skill-icon floating" style="animation-delay: 0.5s;"></i>
+                    <h3 class="skill-title">Cloud Architecture</h3>
+                    <p class="skill-description">
+                        AWS, Docker, Kubernetes deployments with CI/CD pipelines and auto-scaling solutions.
+                    </p>
+                </div>
+                
+                <!-- Skill 5 -->
+                <div class="skill-card fade-in delay-3">
+                    <i class="fas fa-project-diagram skill-icon floating" style="animation-delay: 0.6s;"></i>
+                    <h3 class="skill-title">System Design</h3>
+                    <p class="skill-description">
+                        Microservices architecture, message brokers (RabbitMQ), and distributed systems.
+                    </p>
+                </div>
+                
+                <!-- Skill 6 -->
+                <div class="skill-card fade-in delay-3">
+                    <i class="fas fa-shield-alt skill-icon floating" style="animation-delay: 0.7s;"></i>
+                    <h3 class="skill-title">Security</h3>
+                    <p class="skill-description">
+                        OAuth, JWT, encryption, and Telegram security best practices implementation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Skill Bars -->
+            <div class="skill-bars fade-in delay-4" style="margin-top: 4rem;">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span class="skill-name">Telegram Bot API</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span class="skill-name">Database Design</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span class="skill-name">Cloud Deployment</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Development Process</h2>
+                <p class="section-subtitle">
+                    My structured approach to delivering high-quality Telegram bot solutions
+                </p>
+            </div>
+            
+            <div class="process-container">
+                <div class="process-step fade-in delay-1">
+                    <div class="process-number">1</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Requirement Analysis</h3>
+                        <p class="process-description">
+                            Thorough discussion to understand your business needs, target audience, 
+                            and desired features. I create detailed specifications to ensure we're 
+                            aligned on project goals.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in delay-2">
+                    <div class="process-number">2</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Architecture Design</h3>
+                        <p class="process-description">
+                            Designing scalable system architecture with appropriate technologies. 
+                            Planning database structure, API integrations, and security measures 
+                            tailored to your project requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in delay-3">
+                    <div class="process-number">3</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Development & Testing</h3>
+                        <p class="process-description">
+                            Agile development with iterative testing. I implement features in sprints, 
+                            providing regular updates and demo versions for your feedback to ensure 
+                            the solution meets expectations.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step fade-in delay-4">
+                    <div class="process-number">4</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Deployment & Maintenance</h3>
+                        <p class="process-description">
+                            Smooth deployment with comprehensive documentation. I provide ongoing 
+                            support, performance monitoring, and updates to keep your bot running 
+                            optimally as your needs evolve.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">
+                    My career path through leading tech companies and innovative startups.
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item fade-in delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - Present</div>
+                    <h3 class="timeline-title">Senior Bot Developer</h3>
+                    <p class="timeline-company">TechSolutions Inc.</p>
+                    <p class="timeline-description">
+                        Lead developer for enterprise-grade Telegram automation platform serving 50+ clients. 
+                        Architected scalable bot infrastructure handling 5M+ daily requests. Implemented CI/CD 
+                        pipelines reducing deployment time by 70%.
+                    </p>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="timeline-item fade-in delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2024</div>
+                    <h3 class="timeline-title">Bot Developer</h3>
+                    <p class="timeline-company">AutomateAll</p>
+                    <p class="timeline-description">
+                        Developed 15+ custom Telegram bots for e-commerce, education, and fintech sectors. 
+                        Pioneered AI integration techniques that improved user engagement by 40%. Mentored 
+                        junior developers in Python best practices.
+                    </p>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div class="timeline-item fade-in delay-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 - 2022</div>
+                    <h3 class="timeline-title">Python Developer</h3>
+                    <p class="timeline-company">CodeCrafters</p>
+                    <p class="timeline-description">
+                        Built backend systems and API integrations that later evolved into Telegram bot services. 
+                        Developed foundational skills in asynchronous programming and database optimization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">
+                    What industry professionals say about working with me.
+                </p>
+            </div>
+            
+            <div class="testimonials-container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card fade-in delay-1">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content">
+                        "Ezekiel transformed our customer support with his Telegram bot solution, reducing response 
+                        times from hours to minutes. His attention to detail and system architecture knowledge 
+                        are exceptional."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CTO, SupportSystems</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card fade-in delay-2">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-content">
+                        "The e-commerce bot Ezekiel developed increased our sales by 30% through personalized 
+                        recommendations and seamless checkout. His solution scaled perfectly during peak seasons."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>CEO, ShopGlobal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card fade-in delay-3">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-content">
+                        "Working with Ezekiel on our AI assistant was a game-changer. He not only delivered 
+                        exceptional code but also provided strategic insights that shaped our product roadmap."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Emma Rodriguez</h4>
+                            <p>Product Lead, AI Innovations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section --><section id="blog">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Latest Articles</h2>
+            <p class="section-subtitle">
+                Insights and tutorials about Telegram bot development
+            </p>
+        </div>
+        
+        <div class="blog-container">
+            <!-- Blog Post 1 -->
+            <div class="blog-card fade-in delay-1">
+                <div class="blog-img-container">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                         alt="Telegram Bot Architecture" 
+                         class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">June 15, 2023</div>
+                    <h3 class="blog-title">Scalable Telegram Bot Architecture</h3>
+                    <p class="blog-excerpt">
+                        Learn how to design Telegram bots that can handle millions of users with proper 
+                        architecture patterns and cloud deployment strategies.
+                    </p>
+                    <div class="blog-full-content" style="display: none;">
+                        <p>This is the full content for Scalable Telegram Bot Architecture. Here you would include:</p>
+                        <ul>
+                            <li>Architecture diagrams</li>
+                            <li>Load balancing strategies</li>
+                            <li>Database optimization tips</li>
+                            <li>Real-world case studies</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="blog-link read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Blog Post 2 -->
+            <div class="blog-card fade-in delay-2">
+                <div class="blog-img-container">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80" 
+                         alt="AI in Telegram Bots" 
+                         class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">May 2, 2023</div>
+                    <h3 class="blog-title">Integrating AI in Telegram Bots</h3>
+                    <p class="blog-excerpt">
+                        A practical guide to adding GPT-4 and other AI models to your Telegram bots for 
+                        enhanced conversational experiences.
+                    </p>
+                    <div class="blog-full-content" style="display: none;">
+                        <p>Full content about AI integration would go here:</p>
+                        <ul>
+                            <li>Setting up OpenAI API</li>
+                            <li>Context-aware conversations</li>
+                            <li>Cost optimization strategies</li>
+                            <li>Example code snippets</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="blog-link read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Blog Post 3 -->
+            <div class="blog-card fade-in delay-3">
+                <div class="blog-img-container">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Telegram Bot Security" 
+                         class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">April 10, 2023</div>
+                    <h3 class="blog-title">Securing Your Telegram Bot</h3>
+                    <p class="blog-excerpt">
+                        Best practices for implementing authentication, encryption, and other security 
+                        measures in your Telegram bots.
+                    </p>
+                    <div class="blog-full-content" style="display: none;">
+                        <p>Detailed security content would appear here:</p>
+                        <ul>
+                            <li>User authentication flows</li>
+                            <li>Data encryption methods</li>
+                            <li>Rate limiting strategies</li>
+                            <li>Common vulnerabilities</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="blog-link read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Choose ONE of these View All Articles buttons -->
+        
+        <!-- OPTION 1: Modal Approach -->
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="#" class="btn btn-secondary fade-in delay-4" id="viewAllArticlesModalBtn">
+                <i class="fas fa-book-open"></i> View All Articles
+            </a>
+        </div>
+        
+        <!-- OPTION 2: Expand All Approach -->
+        <!-- <div class="text-center" style="margin-top: 3rem;">
+            <a href="#" class="btn btn-secondary fade-in delay-4" id="expandAllArticlesBtn">
+                <i class="fas fa-book-open"></i> View All Articles (Expand)
+            </a>
+        </div> -->
+        
+        <!-- OPTION 3: Load More Approach -->
+        <!-- <div class="text-center" style="margin-top: 3rem;">
+            <a href="#" class="btn btn-secondary fade-in delay-4" id="loadMoreArticlesBtn">
+                <i class="fas fa-book-open"></i> View All Articles (Load More)
+            </a>
+        </div> -->
+        
+        <!-- OPTION 4: External Link Approach -->
+        <!-- <div class="text-center" style="margin-top: 3rem;">
+            <a href="https://medium.com/your-blog" target="_blank" class="btn btn-secondary fade-in delay-4">
+                <i class="fas fa-book-open"></i> View All Articles on Medium
+            </a>
+        </div> -->
+    </div>
+</section>
+
+<!-- Modal for Option 1 -->
+<div class="modal" id="articlesModal">
+  <div class="modal-content" style="max-width: 800px;">
+    <div class="modal-header">
+      <h3>All Articles</h3>
+      <button class="modal-close" onclick="closeModal('articlesModal')">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-articles-list">
+        <!-- Articles will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<style>
+    /* Blog content toggle styles */
+    .blog-full-content {
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+        padding: 1rem;
+        background: rgba(67, 97, 238, 0.05);
+        border-radius: 8px;
+    }
+    
+    .blog-link.read-more-btn {
+        cursor: pointer;
+    }
+    
+    /* Modal styles */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2000;
+        overflow-y: auto;
+        padding: 2rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .modal.active {
+        display: flex;
+        opacity: 1;
+    }
+    
+    .modal-content {
+        background: var(--card-bg);
+        border-radius: 12px;
+        width: 100%;
+        margin: auto;
+        box-shadow: var(--shadow-lg);
+        overflow: hidden;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+    }
+    
+    .modal.active .modal-content {
+        transform: translateY(0);
+    }
+    
+    .modal-header {
+        padding: 1.5rem 2rem;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .modal-close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--text-light);
+        transition: var(--transition);
+    }
+    
+    .modal-close:hover {
+        color: var(--primary);
+        transform: rotate(90deg);
+    }
+    
+    .modal-body {
+        padding: 2rem;
+    }
+    
+    .modal-articles-list .blog-card {
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: none;
+    }
+</style>
+
+<script>
+    // Read More button functionality
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const blogCard = btn.closest('.blog-card');
+            const fullContent = blogCard.querySelector('.blog-full-content');
+            const excerpt = blogCard.querySelector('.blog-excerpt');
+            
+            fullContent.style.display = fullContent.style.display === 'none' ? 'block' : 'none';
+            excerpt.style.display = excerpt.style.display === 'none' ? 'block' : 'none';
+            btn.innerHTML = fullContent.style.display === 'none' ? 
+                'Read More <i class="fas fa-arrow-right"></i>' : 
+                'Show Less <i class="fas fa-arrow-up"></i>';
+        });
+    });
+
+    // OPTION 1: Modal Approach
+    document.getElementById('viewAllArticlesModalBtn')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        openArticlesModal();
+    });
+
+    function openArticlesModal() {
+        const modal = document.getElementById('articlesModal');
+        const articlesContainer = modal.querySelector('.modal-articles-list');
+        
+        articlesContainer.innerHTML = '';
+        
+        document.querySelectorAll('.blog-card').forEach(card => {
+            const clone = card.cloneNode(true);
+            clone.querySelector('.blog-full-content').style.display = 'none';
+            clone.querySelector('.read-more-btn').remove();
+            articlesContainer.appendChild(clone);
+        });
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    // OPTION 2: Expand All Approach
+    document.getElementById('expandAllArticlesBtn')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        const allExpanded = this.dataset.expanded === 'true';
+        
+        document.querySelectorAll('.blog-card').forEach(card => {
+            const fullContent = card.querySelector('.blog-full-content');
+            const excerpt = card.querySelector('.blog-excerpt');
+            const btn = card.querySelector('.read-more-btn');
+            
+            fullContent.style.display = allExpanded ? 'none' : 'block';
+            excerpt.style.display = allExpanded ? 'block' : 'none';
+            btn.innerHTML = allExpanded ? 
+                'Read More <i class="fas fa-arrow-right"></i>' : 
+                'Show Less <i class="fas fa-arrow-up"></i>';
+        });
+        
+        this.innerHTML = allExpanded ? 
+            '<i class="fas fa-book-open"></i> View All Articles' : 
+            '<i class="fas fa-book"></i> Collapse All Articles';
+        this.dataset.expanded = !allExpanded;
+    });
+
+    // OPTION 3: Load More Approach
+    document.getElementById('loadMoreArticlesBtn')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+        
+        // Simulate AJAX loading
+        setTimeout(() => {
+            const blogContainer = document.querySelector('.blog-container');
+            const newArticle = document.createElement('div');
+            newArticle.className = 'blog-card fade-in';
+            newArticle.innerHTML = `
+                <div class="blog-img-container">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                         alt="New Article" class="blog-img">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">July 1, 2023</div>
+                    <h3 class="blog-title">Advanced Bot Analytics</h3>
+                    <p class="blog-excerpt">
+                        Track user behavior and optimize your Telegram bot with these analytics techniques.
+                    </p>
+                    <div class="blog-full-content" style="display: none;">
+                        <p>Full content about analytics would appear here...</p>
+                    </div>
+                    <a href="#" class="blog-link read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            `;
+            
+            blogContainer.appendChild(newArticle);
+            this.innerHTML = '<i class="fas fa-check"></i> Loaded More Articles';
+            
+            // Rebind click event to new Read More button
+            newArticle.querySelector('.read-more-btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                const blogCard = this.closest('.blog-card');
+                const fullContent = blogCard.querySelector('.blog-full-content');
+                const excerpt = blogCard.querySelector('.blog-excerpt');
+                
+                fullContent.style.display = fullContent.style.display === 'none' ? 'block' : 'none';
+                excerpt.style.display = excerpt.style.display === 'none' ? 'block' : 'none';
+                this.innerHTML = fullContent.style.display === 'none' ? 
+                    'Read More <i class="fas fa-arrow-right"></i>' : 
+                    'Show Less <i class="fas fa-arrow-up"></i>';
+            });
+        }, 1500);
+    });
+</script>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Let's Collaborate</h2>
+                <p class="section-subtitle">
+                    Have a project in mind? Get in touch to discuss how I can help bring your vision to life.
+                </p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info fade-in delay-1">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:solazetech@gmail.com">solazetech@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Telegram</h4>
+                                    <a href="https://t.me/solaze_tech" target="_blank">@solazetech</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>San Francisco, CA (Remote Worldwide)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>Availability</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Freelance</h4>
+                                    <p>Available for projects</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Full-time</h4>
+                                    <p>Open to opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in delay-2">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col fade-in delay-1">
+                    <a href="#" class="logo">
+                        <i class="fas fa-robot logo-icon"></i>
+                        <span>Ezekiel A.</span>
+                    </a>
+                    <p style="color: var(--text-light); margin: 1.5rem 0; line-height: 1.7;">
+                        Senior Telegram Bot Developer creating intelligent automation solutions for businesses worldwide.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="https://github.com/Solaze02" target="_blank" aria-label="GitHub" class="tooltip">
+                            <i class="fab fa-github"></i>
+                            <span class="tooltip-text">GitHub Profile</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn" class="tooltip">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span class="tooltip-text">LinkedIn Profile</span>
+                        </a>
+                        <a href="https://t.me/solaze_tech" target="_blank" aria-label="Telegram" class="tooltip">
+                            <i class="fab fa-telegram"></i>
+                            <span class="tooltip-text">Telegram Channel</span>
+                        </a>
+                        <a href="https://twitter.com/solazetech" target="_blank" aria-label="Twitter" class="tooltip">
+                            <i class="fab fa-twitter"></i>
+                            <span class="tooltip-text">Twitter Profile</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col fade-in delay-2">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col fade-in delay-3">
+                    <h3>Services</h3>
+                    <div class="footer-links">
+                        <a href="#">Custom Bot Development</a>
+                        <a href="#">API Integrations</a>
+                        <a href="#">Performance Optimization</a>
+                        <a href="#">Consulting</a>
+                        <a href="#">Technical Audits</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col fade-in delay-4">
+                    <h3>Resources</h3>
+                    <div class="footer-links">
+                        <a href="#">Blog</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">GitHub Repos</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Telegram Channel</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="current-year"></span> solazetech. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+<script>
+    window.addEventListener('load', function () {
+        setTimeout(() => {
+            const loader = document.getElementById('preloader');
+            loader.style.opacity = '0';
+            loader.style.visibility = 'hidden';
+        }, 3000); // 3 seconds to let the animation play
+    });
+</script>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Project Modals -->
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Enterprise Automation Suite</h3>
+                <button class="modal-close" onclick="closeModal('modal1')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Enterprise Automation Bot" 
+                     class="modal-img">
+                
+                <p class="modal-description">
+                    The Enterprise Automation Suite is a comprehensive business automation platform built within Telegram, 
+                    designed to streamline operations for medium to large enterprises. This solution integrates CRM 
+                    functionality, task management, and real-time analytics into a single, user-friendly interface 
+                    accessible via Telegram.
+                </p>
+                
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Seamless CRM integration with Salesforce and HubSpot</li>
+                        <li>Task assignment and progress tracking with notifications</li>
+                        <li>Real-time analytics dashboard with customizable reports</li>
+                        <li>Role-based access control with multiple permission levels</li>
+                        <li>Automated workflow triggers based on business rules</li>
+                        <li>Built to handle 10,000+ concurrent users with horizontal scaling</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-features">
+                    <h4>Technical Details</h4>
+                    <ul>
+                        <li>Built with Python 3.9 and aiogram framework</li>
+                        <li>PostgreSQL database with Redis caching layer</li>
+                        <li>Docker containers orchestrated with Kubernetes</li>
+                        <li>CI/CD pipeline with GitHub Actions</li>
+                        <li>Monitoring with Prometheus and Grafana</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/yourusername/enterprise-bot" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View Source
+                </a>
+                <a href="https://t.me/EnterpriseDemoBot" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">AI-Powered Assistant</h3>
+                <button class="modal-close" onclick="closeModal('modal2')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="AI-Powered Assistant" 
+                     class="modal-img">
+                
+                <p class="modal-description">
+                    The AI-Powered Assistant is an advanced conversational agent that integrates GPT-4 with custom 
+                    knowledge bases to provide intelligent, context-aware responses. This solution processes over 
+                    5 million monthly requests across text, voice, and image inputs, delivering a truly multimodal 
+                    experience within Telegram.
+                </p>
+                
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Natural language understanding with GPT-4 integration</li>
+                        <li>Custom knowledge base with vector embeddings for fast retrieval</li>
+                        <li>Multimodal support (text, voice notes, image processing)</li>
+                        <li>Context-aware conversation memory</li>
+                        <li>Sentiment analysis for improved responses</li>
+                        <li>Multi-language support with automatic translation</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-features">
+                    <h4>Technical Details</h4>
+                    <ul>
+                        <li>Python backend with FastAPI for the API layer</li>
+                        <li>OpenAI API with custom fine-tuning</li>
+                        <li>WebSockets for real-time updates</li>
+                        <li>AWS Lambda for scalable processing</li>
+                        <li>Elasticsearch for knowledge base retrieval</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/yourusername/ai-assistant" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View Source
+                </a>
+                <a href="https://t.me/AIAssistantDemo" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">E-Commerce Platform</h3>
+                <button class="modal-close" onclick="closeModal('modal3')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="E-Commerce Platform" 
+                     class="modal-img">
+                
+                <p class="modal-description">
+                    The Telegram E-Commerce Platform is a complete shopping solution that brings the entire 
+                    e-commerce experience into Telegram. This bot has processed over $2 million in transactions, 
+                    offering product catalogs, cart management, and secure payment processing all within the 
+                    Telegram interface.
+                </p>
+                
+                <div class="modal-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Interactive product catalog with categories and filters</li>
+                        <li>Cart management with saved items</li>
+                        <li>Secure payment processing via Stripe and Telegram Payments</li>
+                        <li>Order tracking with shipping updates</li>
+                        <li>Personalized product recommendations</li>
+                        <li>Admin dashboard for inventory and order management</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-features">
+                    <h4>Technical Details</h4>
+                    <ul>
+                        <li>Python with Django backend</li>
+                        <li>Stripe API integration with webhooks</li>
+                        <li>Celery for asynchronous task processing</li>
+                        <li>PostgreSQL for transactional data</li>
+                        <li>Redis for caching and real-time updates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/yourusername/ecommerce-bot" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> View Source
+                </a>
+                <a href="https://t.me/ShopDemoBot" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const themeToggle = document.getElementById('themeToggle');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Dark mode toggle
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const icon = themeToggle.querySelector('i');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form data collection
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Here you would typically send the data to a server
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+
+        // Animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+ // Back to top button - Improved version
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTop.classList.add('active');
+    } else {
+        backToTop.classList.remove('active');
+    }
+});
+
+// Smooth scroll to top
+backToTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+        // Floating bot icons in hero section
+        const floatingBots = document.getElementById('floatingBots');
+        const botIcons = ['fa-robot', 'fa-code', 'fa-cog', 'fa-microchip', 'fa-server', 'fa-brain'];
+        
+        for (let i = 0; i < 15; i++) {
+            const bot = document.createElement('i');
+            bot.className = `bot-icon fas ${botIcons[Math.floor(Math.random() * botIcons.length)]}`;
+            bot.style.left = `${Math.random() * 100}%`;
+            bot.style.top = `${Math.random() * 100}%`;
+            bot.style.fontSize = `${Math.random() * 1 + 1}rem`;
+            bot.style.animationDelay = `${Math.random() * 15}s`;
+            bot.style.animationDuration = `${Math.random() * 10 + 10}s`;
+            floatingBots.appendChild(bot);
+        }
+
+        // Animated statistics counter
+        function animateValue(id, start, end, duration) {
+            const obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Start counters when stats section is visible
+        const statsSection = document.querySelector('.stats-section');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateValue('stat1', 0, 20, 2000);
+                    animateValue('stat2', 0, 15, 2000);
+                    animateValue('stat3', 0, 40, 2000);
+                    animateValue('stat4', 0, 5, 2000);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statsObserver.observe(statsSection);
+
+        // Animate skill bars
+        const skillBars = document.querySelectorAll('.skill-progress-bar');
+        const skillsSection = document.querySelector('#skills');
+        
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    skillBars.forEach(bar => {
+                        const width = bar.getAttribute('data-width');
+                        bar.style.width = width + '%';
+                    });
+                    skillsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        skillsObserver.observe(skillsSection);
+
+        // Project modals
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside content
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
