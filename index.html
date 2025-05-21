@@ -12,17 +12,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aderinsola-1.github.io/Ezekiel/">
+    <meta property="og:url" content="https://Solaze01.github.io/">
     <meta property="og:title" content="Ezekiel A. | Senior Telegram Bot Developer">
     <meta property="og:description" content="Professional Telegram Bot Developer specializing in AI chatbots and Python automation">
-    <meta property="og:image" content="https://aderinsola-1.github.io/Ezekiel/images/social-preview.jpg">
+    <meta property="og:image" content="https://Solaze01.github.io/images/social-preview.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://aderinsola-1.github.io/Ezekiel/">
+    <meta property="twitter:url" content="https://your-username.github.io/">
     <meta property="twitter:title" content="Ezekiel A. | Senior Telegram Bot Developer">
     <meta property="twitter:description" content="Professional Telegram Bot Developer specializing in AI chatbots and Python automation">
-    <meta property="twitter:image" content="https://aderinsola-1.github.io/Ezekiel/images/social-preview.jpg">
+    <meta property="twitter:image" content="https://your-username.github.io/images/social-preview.jpg">
 
     <!-- Favicon (Keep your existing) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><style>circle{fill:%234361ee}@media (prefers-color-scheme:dark){circle{fill:%234895ef}}</style><circle cx=%2250%22 cy=%2250%22 r=%2245%22/><path d=%22M30,35 Q50,25 70,35 L65,50 Q50,45 35,50 Z%22 fill=%22%23fff%22/><circle cx=%2240%22 cy=%2235%22 r=%225%22 fill=%22%23fff%22/><circle cx=%2260%22 cy=%2235%22 r=%225%22 fill=%22%23fff%22/><path d=%22M30,65 Q50,75 70,65%22 stroke=%22%23fff%22 stroke-width=%223%22 fill=%22none%22/></svg>">
@@ -51,526 +51,387 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://aderinsola-1.github.io/Ezekiel/">
+    <link rel="canonical" href="https://your-username.github.io/">
 </head>
     <style>
-.team-container {
-    display: flex;
-    gap: 2.5rem;
-    margin-top: 3rem;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.team-member {
-    background: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 16px;
-    box-shadow: var(--shadow-md);
-    text-align: center;
-    width: 200px;
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-}
-
-.team-photo {
-    width: 180px;
-    height: auto;
-    border-radius: 20px;
-    object-fit: contain;
-    background-color: #f0f0f0;
-    padding: 5px;
-    box-shadow: var(--shadow-lg);
-    margin-bottom: 1rem;
-}
-
-.team-info h4 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 0.2rem;
-}
-
-.team-info p {
-    font-size: 1rem;
-    color: var(--text-light);
-}
-
-@media (max-width: 576px) {
-  /* Adjust team container for mobile */
-  .team-container {
-    flex-direction: column;
-    align-items: flex-start; /* Align the content to the left */
-    gap: 1rem;
-  }
-
-  /* Reduce size of team member */
-  .team-member {
-    width: 100%;
-    max-width: 280px;
-    padding: 1rem;
-    text-align: left; /* Align text to the left */
-  }
-
-  /* Adjust team photo size */
-  .team-photo {
-    width: 100%;
-    max-width: 180px; /* Adjust size to make image more prominent */
-    margin-bottom: 0.5rem;
-  }
-
-  /* Adjust team info text */
-  .team-info h4 {
-    font-size: 1.1rem;
-  }
-
-  .team-info p {
-    font-size: 0.9rem;
-    color: var(--text-light);
-  }
-
-  /* Hero Section Adjustments */
-  .hero {
-    padding-top: 80px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column; /* Stack content */
-    align-items: flex-start; /* Align content to the left */
-  }
-
-  .hero-content {
-    width: 100%;
-    max-width: 90%;
-    margin-bottom: 2rem;
-    text-align: left; /* Align text to the left */
-  }
-
-  /* Hero title size adjustment */
-  .hero-title {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-  }
-
-  .hero-subtitle {
-    font-size: clamp(1rem, 3vw, 1.5rem);
-  }
-
-  .hero-description {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
-  }
-
-  .hero-actions {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column; /* Stack actions vertically */
-    gap: 1rem;
-  }
-
-  /* Button adjustments for mobile */
-  .btn {
-    width: 100%; /* Make buttons full width */
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    text-align: center; /* Center the text */
-  }
-
-  .btn-primary {
-    background: var(--primary);
-    color: white;
-    box-shadow: 0 4px 14px rgba(67, 97, 238, 0.3);
-  }
-
-  .btn-primary:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-  }
-
-  /* Adjust the team photo size */
-  .team-photo {
-    width: 100%;
-    max-width: 120px; /* Slightly smaller image */
-  }
-}
-
-/* ===== CSS Variables ===== */
-:root {
-    /* Light Theme */
-    --primary: #4361ee;
-    --primary-dark: #3a56d4;
-    --accent: #4895ef;
-    --text: #2b2d42;
-    --text-light: #8d99ae;
-    --bg: #f8f9fa;
-    --card-bg: #ffffff;
-    --nav-bg: rgba(255, 255, 255, 0.98);
-    --border: rgba(0, 0, 0, 0.08);
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --section-spacing: 8rem;
-}
-
-.dark-mode {
-    /* Dark Theme */
-    --primary: #4895ef;
-    --primary-dark: #3f7fd5;
-    --accent: #7209b7;
-    --text: #f8f9fa;
-    --text-light: #adb5bd;
-    --bg: #121212;
-    --card-bg: #1e1e1e;
-    --nav-bg: rgba(30, 30, 30, 0.98);
-    --border: rgba(255, 255, 255, 0.08);
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.25);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-/* ===== Base Styles ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    font-size: 100%;
-}
-
-body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.6;
-    color: var(--text);
-    background-color: var(--bg);
-    transition: var(--transition);
-    overflow-x: hidden;
-}
-
-::selection {
-    background: var(--primary);
-    color: white;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-section {
-    padding: var(--section-spacing) 0;
-    position: relative;
-}
-
-h1, h2, h3, h4 {
-    line-height: 1.2;
-    font-weight: 700;
-}
-
-h1, h2 {
-    font-family: 'Playfair Display', serif;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-ul {
-    list-style: none;
-}
-
-/* ===== Utility Classes ===== */
-.text-center {
-    text-align: center;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.grid {
-    display: grid;
-}
-
-/* ===== Buttons ===== */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.875rem 2rem;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    border: none;
-    outline: none;
-    font-size: 1rem;
-}
-
-.btn-primary {
-    background: var(--primary);
-    color: white;
-    box-shadow: 0 4px 14px rgba(67, 97, 238, 0.3);
-}
-
-.btn-primary:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
-}
-
-.btn-secondary {
-    background: transparent;
-    color: var(--primary);
-    border: 1px solid var(--primary);
-}
-
-.btn-secondary:hover {
-    background: rgba(67, 97, 238, 0.1);
-}
-
-/* ===== Navigation ===== */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: var(--nav-bg);
-    box-shadow: var(--shadow-sm);
-    z-index: 1000;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.logo-icon {
-    color: var(--primary);
-    font-size: 1.8rem;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.nav-links a {
-    font-weight: 500;
-    position: relative;
-    padding: 0.5rem 0;
-    font-size: 0.95rem;
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary);
-    transition: var(--transition);
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-.nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.theme-toggle {
-    background: none;
-    border: none;
-    color: var(--text);
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition: var(--transition);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(67, 97, 238, 0.1);
-}
-
-.theme-toggle:hover {
-    transform: rotate(30deg);
-}
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    z-index: 1001;
-}
-
-/* ===== Hero Section ===== */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 80px;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(67, 97, 238, 0.08) 0%, rgba(67, 97, 238, 0) 70%);
-    z-index: -1;
-}
-
-/* New floating bot icons */
-.floating-bots {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.bot-icon {
-    position: absolute;
-    color: rgba(67, 97, 238, 0.1);
-    font-size: 2rem;
-    animation: float 15s infinite linear;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 0;
-    }
-    10% {
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateY(-100vh) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-.hero-content {
-    max-width: 700px;
-    position: relative;
-}
-
-.hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
-}
-
-.hero-title span {
-    color: var(--primary);
-    position: relative;
-    display: inline-block;
-}
-
-.hero-title span::after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background: rgba(67, 97, 238, 0.3);
-    z-index: -1;
-    border-radius: 4px;
-}
-
-.hero-subtitle {
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-    color: var(--text-light);
-}
-
-.hero-description {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    margin-bottom: 2.5rem;
-    color: var(--text-light);
-    max-width: 600px;
-    line-height: 1.8;
-}
-
-.hero-actions {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.social-links {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.social-links a {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(67, 97, 238, 0.1);
-    color: var(--text);
-    font-size: 1.2rem;
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    background: var(--primary);
-    color: white;
-    transform: translateY(-3px);
-}
+        /* ===== CSS Variables ===== */
+        :root {
+            /* Light Theme */
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --accent: #4895ef;
+            --text: #2b2d42;
+            --text-light: #8d99ae;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --nav-bg: rgba(255, 255, 255, 0.98);
+            --border: rgba(0, 0, 0, 0.08);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --section-spacing: 8rem;
+        }
+
+        .dark-mode {
+            /* Dark Theme */
+            --primary: #4895ef;
+            --primary-dark: #3f7fd5;
+            --accent: #7209b7;
+            --text: #f8f9fa;
+            --text-light: #adb5bd;
+            --bg: #121212;
+            --card-bg: #1e1e1e;
+            --nav-bg: rgba(30, 30, 30, 0.98);
+            --border: rgba(255, 255, 255, 0.08);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.25);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ===== Base Styles ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 100%;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            transition: var(--transition);
+            overflow-x: hidden;
+        }
+
+        ::selection {
+            background: var(--primary);
+            color: white;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: var(--section-spacing) 0;
+            position: relative;
+        }
+
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ===== Utility Classes ===== */
+        .text-center {
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        /* ===== Buttons ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 14px rgba(67, 97, 238, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(67, 97, 238, 0.1);
+        }
+
+        /* ===== Navigation ===== */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: var(--nav-bg);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(67, 97, 238, 0.1);
+        }
+
+        .theme-toggle:hover {
+            transform: rotate(30deg);
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 1001;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(67, 97, 238, 0.08) 0%, rgba(67, 97, 238, 0) 70%);
+            z-index: -1;
+        }
+
+        /* New floating bot icons */
+        .floating-bots {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .bot-icon {
+            position: absolute;
+            color: rgba(67, 97, 238, 0.1);
+            font-size: 2rem;
+            animation: float 15s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.3;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .hero-content {
+            max-width: 700px;
+            position: relative;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-title span {
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-title span::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: rgba(67, 97, 238, 0.3);
+            z-index: -1;
+            border-radius: 4px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .hero-description {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 2.5rem;
+            color: var(--text-light);
+            max-width: 600px;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(67, 97, 238, 0.1);
+            color: var(--text);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
 
 
         /* ===== Stats Section ===== */
@@ -1819,23 +1680,6 @@ nav {
                 </div>
             </div>
         </div>
-<!-- Replace the current team-photos div with this -->
-<div class="team-container fade-in delay-2">
-    <div class="team-member">
-        <img src="https://i.ibb.co/R4yMchfM/new-taker.jpg" class="team-photo">
-        <div class="team-info">
-            <h4>Ezekiel A.</h4>
-            <p>Senior Bot Developer</p>
-        </div>
-    </div>
-    <div class="team-member">
-        <img src="https://i.ibb.co/B2546X90/photo-6046340537541313724-x.jpg" alt="Dim Gold" class="team-photo">
-        <div class="team-info">
-            <h4>Ines Hbi</h4>
-            <p>Patner</p>
-        </div>
-    </div>
-</div>
     </section>
 
     <!-- Stats Section -->
@@ -2665,7 +2509,7 @@ nav {
                                 </div>
                                 <div class="contact-details">
                                     <h4>Location</h4>
-                                    <p>San Francisco, CA (Remote Worldwide)</p>
+                                    <p>Akure, Nigeria (Remote Worldwide)</p>
                                 </div>
                             </div>
                         </div>
@@ -2696,6 +2540,7 @@ nav {
                     </div>
                 </div>
                 
+    
      <div class="contact-form fade-in delay-2">
     <form id="contactForm" action="https://formspree.io/f/mqaqkqdn" method="POST">
         <div class="form-group">
@@ -2722,6 +2567,7 @@ nav {
             </div>
         </div>
     </section>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -2736,7 +2582,7 @@ nav {
                         Senior Telegram Bot Developer creating intelligent automation solutions for businesses worldwide.
                     </p>
                     <div class="footer-social-links">
-                        <a href="https://github.com/Solaze02" target="_blank" aria-label="GitHub" class="tooltip">
+                        <a href="https://github.com/Solaze01" target="_blank" aria-label="GitHub" class="tooltip">
                             <i class="fab fa-github"></i>
                             <span class="tooltip-text">GitHub Profile</span>
                         </a>
@@ -2858,7 +2704,7 @@ nav {
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="https://github.com/yourusername/enterprise-bot" target="_blank" class="btn btn-secondary">
+                <a href="https://github.com/Solaze01/botnexus-enterprise.git" target="_blank" class="btn btn-secondary">
                     <i class="fab fa-github"></i> View Source
                 </a>
                 <a href="https://t.me/EnterpriseDemoBot" target="_blank" class="btn btn-primary">
@@ -2913,7 +2759,7 @@ nav {
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="https://github.com/yourusername/ai-assistant" target="_blank" class="btn btn-secondary">
+                <a href="https://github.com/Solaze01/NeuroBot-AI" target="_blank" class="btn btn-secondary">
                     <i class="fab fa-github"></i> View Source
                 </a>
                 <a href="https://t.me/AIAssistantDemo" target="_blank" class="btn btn-primary">
@@ -2968,7 +2814,7 @@ nav {
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="https://github.com/yourusername/ecommerce-bot" target="_blank" class="btn btn-secondary">
+                <a href="https://github.com/Solaze01/Telegram-E-Commerce-Platform" target="_blank" class="btn btn-secondary">
                     <i class="fab fa-github"></i> View Source
                 </a>
                 <a href="https://t.me/ShopDemoBot" target="_blank" class="btn btn-primary">
@@ -3033,21 +2879,7 @@ nav {
             });
         });
 
-        // Form submission
-    // Contact Form Submission
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    // Get the submit button
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalBtnText = submitBtn.innerHTML;
-    
-    // Show loading state
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    submitBtn.disabled = true;
-
-    // Form data collection
+   // Form data collection
     const formData = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
@@ -3082,31 +2914,32 @@ contactForm.addEventListener('submit', async function(e) {
     }
 });
 
-// Animation on scroll (keep your existing code)
-const fadeElements = document.querySelectorAll('.fade-in');
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
+        // Animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
 
-fadeElements.forEach(el => {
-    el.style.opacity = 0;
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
+        fadeElements.forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
 
-// Set current year in footer (keep your existing code)
-document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
  // Back to top button - Improved version
 const backToTop = document.getElementById('backToTop');
 
